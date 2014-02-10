@@ -1,0 +1,57 @@
+
+// ----- Colors ----- //
+
+$background-color: #fffff8;
+$text-color-base: #444;
+
+$purple-dark: #660066;
+$purple-main: #92278f;
+$purple-light: #ff00ff;
+$purple-super-light: #a580a4;
+
+$grey-dark: #363636;
+$grey-medium: #666;
+$grey-light: #ddd;
+$grey-super-light: #eee;
+
+$white: #fff;
+
+$accent-main:#92278D;
+$accent-red:#C5355E;
+$accent-green:#72C334;
+$accent-yellow:#B7D338;
+
+// ---- Typography ---- //
+
+$font-family-main:"Lucida Bright", Georgia, serif;
+$font-size-main: 14px;
+$font-family-title:"Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+
+// ---- Mixins ---- //
+@mixin Main-Title {
+	font-family: $font-family-title;
+    font-weight:normal;
+    line-height: 1em;
+	color:$purple-dark;
+    text-transform: uppercase;
+    font-size: $font-size-main *2.5;
+}
+@mixin Second-Head {
+	font-family: $font-family-title;
+	font-size: $font-size-main * 2;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px solid $grey-light;
+    font-weight: normal;
+    line-height: 1.2em;
+    text-transform: capitalize;
+}
+@mixin Head-Grey {
+    font-family: $font-family-title;
+	font-weight: bold;
+    color:$grey-medium;
+    font-size: $font-size-main * 2;
+    text-transform: capitalize;
+}
+
+
