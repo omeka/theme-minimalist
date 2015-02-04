@@ -381,7 +381,7 @@ table {
 /* -------------------------------------------------------------------------*/
 /* Screen */
 /* -------------------------------------------------------------------------*/
-/* Table of Contents 
+/* Table of Contents
 -- General Styles
 ---- Layout
 ---- General Styles
@@ -594,6 +594,17 @@ body {
 #content {
   padding: 1em 0 2em 0;
   overflow: auto;
+}
+
+#skipnav {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 abbr, acronym {
