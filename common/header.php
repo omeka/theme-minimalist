@@ -28,7 +28,6 @@
 
     <!-- JavaScripts -->
     <?php
-    queue_js_url('https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
     queue_js_file(array('jquery-accessibleMegaMenu', 'main', 'globals'));
     echo head_js();
     ?>
