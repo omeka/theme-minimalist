@@ -28,8 +28,7 @@
 
     <!-- JavaScripts -->
     <?php
-    queue_js_url('//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js');
-    queue_js_file(array('jquery-accessibleMegaMenu', 'main', 'globals'));
+    queue_js_file(array('jquery-accessibleMegaMenu', 'main', 'globals', 'vendor/jquery'));
     echo head_js();
     ?>
 </head>
