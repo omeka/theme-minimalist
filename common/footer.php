@@ -21,7 +21,23 @@
     </div><!-- end wrap -->
 
     <script>
+    jQuery(document).ready(function() {
+      // add a click handler to all links
+      // that point to same-page targets (href="#...")
+      jQuery("a[href^='#']").click(function() {
+        // get the href attribute of the internal link
+        // then strip the first character off it (#)
+        // leaving the corresponding id attribute
+        jQuery("#"+jQuery(this).attr("href").slice(1)+"")
+          // give that id focus (for browsers that didn't already do so)
+          .focus()
+          // add a highlight effect to that id (comment out if not using)
+          //.effect("highlight", {}, 3000);
+      });
+    });
+    </script>
 
+    <script>
     jQuery(document).ready(function() {
         jQuery("#top-nav").accessibleMegaMenu({
             /* prefix for generated unique id attributes, which are required
@@ -52,5 +68,6 @@
     });
 
     </script>
+
 </body>
 </html>
