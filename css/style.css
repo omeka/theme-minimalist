@@ -381,7 +381,7 @@ table {
 /* -------------------------------------------------------------------------*/
 /* Screen */
 /* -------------------------------------------------------------------------*/
-/* Table of Contents 
+/* Table of Contents
 -- General Styles
 ---- Layout
 ---- General Styles
@@ -697,6 +697,28 @@ h6 {
 #site-title a {
   text-decoration: none;
   color: #5C3F8D;
+}
+
+#skipnav {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#skipnav:focus {
+  top: 0;
+  z-index: 9999;
+  clip: initial;
+  height: auto;
+  width: auto;
+  padding: .5em;
+  border: 1px blue dashed;
+  color: #BE75CB;
 }
 
 /* -------------------------------------------------------------------------*/
