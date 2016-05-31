@@ -401,7 +401,7 @@ th {
 /* -------------------------------------------------------------------------*/
 /* Screen */
 /* -------------------------------------------------------------------------*/
-/* Table of Contents 
+/* Table of Contents
 -- General Styles
 ---- Layout
 ---- General Styles
@@ -1321,17 +1321,6 @@ th {
 .show .element {
   border-top: 1px solid #ddd;
 }
-.show .item-file {
-  display: inline-block;
-  padding-right: 1em;
-}
-.show [class^="video-"].item-file,
-.show [class*=" video-"].item-file,
-.show [class^="audio-"].item-file,
-.show [class*=" audio-"].item-file {
-  display: block;
-  padding-right: 0;
-}
 .show #output-format-list {
   margin: 0;
   padding: 0;
@@ -1355,6 +1344,18 @@ th {
   padding-right: 0;
 }
 .show #output-format-list li.last {
+  padding-right: 0;
+}
+
+#itemfiles .item-file {
+  display: inline-block;
+  padding-right: 1em;
+}
+#itemfiles [class^="video-"].item-file,
+#itemfiles [class*=" video-"].item-file,
+#itemfiles [class^="audio-"].item-file,
+#itemfiles [class*=" audio-"].item-file {
+  display: block;
   padding-right: 0;
 }
 
@@ -1936,7 +1937,7 @@ body.files .item-file {
     margin: 0;
     background-color: #BE75CB;
     z-index: 2;
-    border: 1px solid #6e6e6e;
+    border: 1px solid #6f6f6f;
   }
   #top-nav .nav-menu .sub-nav.open {
     display: block;
