@@ -653,6 +653,10 @@ button,
     }
 }
 
+.search-entry:first-child .advanced-search-joiner {
+    display: none;
+}
+
 /* -------------------------------------------------------------------------*/
 /* Tables */
 table {
