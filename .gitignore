@@ -2,4 +2,6 @@
 .sass-cache/
 vendor/
 .bundle
+package-lock.json
+node_modules/
 

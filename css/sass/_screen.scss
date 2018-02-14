@@ -1,8 +1,3 @@
-@import "base";
-@import "mixins";
-@import "compass";
-//@import "blueprint/form";
-
 /* -------------------------------------------------------------------------*/
 /* Table of Contents
 -- General Styles
@@ -29,28 +24,62 @@
 /* -------------------------------------------------------------------------*/
 /* Layout */
 #wrap {
-    @include container;
-/*    @include susy-grid-background;
-*/
+    max-width: (($total-columns * $column-width) + (($total-columns - 1) * $gutter-width));
+    margin: auto;
     overflow: hidden;
 }
-#search-container{@include span-columns(12 omega);}
-.nav-menu {@include span-columns(12); margin-right:0;}
-#content {@include span-columns(12 omega);}
-.pagination {@include span-columns(12);}
-#item-filters {@include span-columns(12 omega);}
-#sort-links{@include span-columns(12);}
-#outputs {@include span-columns(12)}
-#advanced-search-form label {@include span-columns(12);}
-#advanced-search-form .inputs {@include span-columns(12 omega);}
-footer {@include span-columns(12 omega);}
+#search-container{
+    width: 100%;
+    margin-right: 0;
+}
+
+.nav-menu {
+    width: 100%; 
+    margin-right: 0;
+}
+
+#content {
+    width: 100%;
+    margin-right: 0;
+}
+
+.pagination {
+    width: 100%;
+}
+
+#item-filters {
+    width: 100%;
+    margin-right: 0;
+}
+
+#sort-links{
+    width: 100%;
+}
+
+#outputs {
+    width: 100%;
+}
+
+#advanced-search-form label {
+    width: 100%;
+}
+
+#advanced-search-form .inputs {
+    width: 100%;
+    margin-right: 0;
+}
+
+footer {
+    @include span(12);
+    margin-right: 0;
+}
 
 
 /* -------------------------------------------------------------------------*/
 /* General Styles */
 
 * {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 }
 
 body {
@@ -89,11 +118,11 @@ body {
     }
 
     h2 {
-        @include padding-leader(1, 2 * $base-font-size);
+        padding-top: $spacing-unit;
     }
 
     .image {
-        @include leader();
+        margin-top: $spacing-unit;
     }
 
     img {
@@ -170,7 +199,7 @@ footer {
 /* -------------------------------------------------------------------------*/
 /* Headings */
 
-#{headings()} {
+h1, h2, h3, h4, h5, h6 {
     font-family: $font-family-title;
     font-weight:normal;
     line-height: $base-line-height * 1.5;
@@ -178,29 +207,36 @@ footer {
     margin:0;
     color: $grey-medium;
 }
-#{headings(4,6)} {
+
+h4, h6 {
     font-style: $base-font-size * 1.2;
 }
-#{headings(5,6)} {
+
+h5, h6 {
     font-weight: bold;
 }
+
 h1 {
     text-transform: uppercase;
     font-size: $base-font-size *2.5;
     clear:both;
     word-wrap: break-word;
 }
+
 h2 {
     font-size: $base-font-size * 2;
     text-transform: capitalize;
     border-top: 4px solid $grey-light;
 }
+
 h3 {
     font-size: $base-font-size * 1.5;
 }
+
 h6 {
     font-size:italic;
 }
+
 #site-title {
     color:$accent-dark;
     font-family: $font-family-title;
@@ -215,9 +251,25 @@ h6 {
 /* -------------------------------------------------------------------------*/
 /* Links */
 a {
-    @include link-colors($accent-main, saturate($accent-light,5%), $accent-light, lighten($accent-main, 10%), $accent-dark);
+    color: $accent-main;
     text-decoration: none;
-    &:hover{text-decoration:underline;}
+
+    &:hover {
+        color: saturate($accent-light, 5%);
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: $accent-light;
+    }
+
+    &:visited {
+        color: lighten($accent-main, 10%);
+    }
+
+    &:focus {
+        color: $accent-dark;
+    }
 }
 
 
@@ -271,7 +323,10 @@ a {
 }
 
 .pagination{
-    @include horizontal-list;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
     margin:1em 0;
     .page-input {
         form {
@@ -326,7 +381,10 @@ a {
 }
 
 .item-pagination {
-    @include horizontal-list;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
     padding:2em 0 1em 0;
 
     .next a, .previous a {
@@ -383,7 +441,7 @@ a {
             padding: 1em 0 1em 1em;
             &:hover {
                 background-color:$accent-main;
-                @include link-colors(white);
+                color: #fff;
                 text-decoration: none;
             }
         }
@@ -448,7 +506,7 @@ form {
     fieldset {
         border:0;
         padding:0;
-        margin: 0 0 rhythm() 0;
+        margin: 0 0 $spacing-unit 0;
     }
     label, input, select {
         margin:1em .5em 1em 0;
@@ -456,7 +514,7 @@ form {
 }
 
 select {
-    @include border-radius(0px);
+    border-radius: 0;
     border: 1px solid $grey-light;
     height: 1.5 * $base-line-height;
     line-height: 1.5 * $base-line-height;
@@ -467,10 +525,9 @@ select {
 
 input[type=text],
 input[type=password] {
-    border-color: $grey-light;
-    @include rhythm-borders(1px, 0, $base-font-size, solid);
+    border: 1px solid $grey-light;
     min-height: 1.5 * $base-line-height;
-    padding: rhythm(.25);
+    padding: (.25 * $spacing-unit);
 }
 
 input[type=submit],
@@ -522,7 +579,7 @@ button,
             bottom: 0;
             right: 0;
             line-height: $base-line-height;
-            padding: rhythm(.25);
+            padding: (.25 * $spacing-unit);
         }
     }
 
@@ -570,7 +627,7 @@ button,
 
         input[type=checkbox],
         input[type=radio] {
-            margin: rhythm(.25) 5px 0 0;
+            margin: (.25 * $spacing-unit) 5px 0 0;
             float:left;
         }
     }
@@ -581,7 +638,7 @@ button,
     ul {
         list-style-type: none;
         padding: 0;
-        @include trailer(1);
+        margin-bottom: $spacing-unit;
     }
 
     li {
@@ -633,7 +690,7 @@ button,
 }
 
 .remove_search {
-    padding: rhythm(.25) 10px;
+    padding: (.25 * $spacing-unit) 10px;
     text-indent: -9999px;
     width: 1.5 * $base-line-height;
     position: relative;
@@ -680,13 +737,13 @@ th {
 
 #recent-items .item {
     border-bottom:1px solid $grey-light;
-    @include trailer();
+    margin-bottom: $spacing-unit;
 }
 
 .item {
     .item-img{
         padding-bottom:.5em;
-        height: rhythm(5);
+        height: (5 * $spacing-unit);
         float: right;
 
         img {
@@ -708,7 +765,10 @@ th {
     }
 
     #output-format-list {
-        @include horizontal-list;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
     }
 }
 
@@ -729,7 +789,7 @@ th {
 
 #itemfiles .download-link {
     display: block;
-    height: rhythm(5);
+    height: (5 * $spacing-unit);
 
     img {
         height: 100%;
@@ -741,7 +801,7 @@ th {
 /* File Pages */
 
 body.files .item-file {
-    @include trailer();
+    margin-bottom: $spacing-unit;
 }
 
 #sidebar {
@@ -780,8 +840,8 @@ body.files .item-file {
 
 .image {
     float: right;
-    margin: 0 0 rhythm() rhythm();
-    height: rhythm(5);
+    margin: 0 0 $spacing-unit $spacing-unit;
+    height: (5 * $spacing-unit);
 
     img {
         float: left;
@@ -792,7 +852,7 @@ body.files .item-file {
 
 .collection .image img,
 .exhibit .image img {
-    @include box-shadow(-6px -6px 0 #bbb, -12px -12px 0 #eee);
+    box-shadow: -6px -6px 0 #bbb, -12px -12px 0 #eee;
     margin-left: 12px !important;
 }
 
@@ -925,8 +985,7 @@ body.files .item-file {
 }
 
 #exhibit-pages.full {
-    border-color: $grey-light;
-    @include leading-border(2px, 0, $base-font-size, solid);
+    border-top: 2px solid $grey-light;
 
     ul {
         margin:1em 0 0 0;

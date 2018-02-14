@@ -1,6 +1,6 @@
 @mixin link-button {
     min-height: 1.5 * $base-line-height;
-    padding: rhythm(.25);
+    padding: .25 * $spacing-unit;
     display: block;
     background-color: lighten($grey-light, 5%);
     margin-bottom:.5em;
