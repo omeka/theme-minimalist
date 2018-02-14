@@ -97,7 +97,7 @@ body {
 .collection,
 .exhibit,
 .hTagcloud {
-    padding:1em 0;
+    margin:1em 0;
     overflow: hidden;
     clear:both;
 }
@@ -180,11 +180,9 @@ blockquote {
 }
 
 .view-items-link {
-    margin:1em 0 .5em 0;
-    a {
-        @include link-button;
-        display: inline;
-    }
+    @include link-button;
+    margin-top: 1em;
+    display: inline-block;
 }
 
 #outputs {
@@ -812,9 +810,6 @@ body.files .item-file {
 /* Collections */
 
 .collections {
-    .collection {
-        margin-bottom:2em;
-    }
     .element {
         margin: 0 0 1em 0;
         padding: 0;

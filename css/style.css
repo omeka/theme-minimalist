@@ -444,7 +444,7 @@ body {
 .collection,
 .exhibit,
 .hTagcloud {
-  padding: 1em 0;
+  margin: 1em 0;
   overflow: hidden;
   clear: both; }
 
@@ -545,21 +545,20 @@ blockquote {
   font-style: italic; }
 
 .view-items-link {
-  margin: 1em 0 .5em 0; }
-  .view-items-link a {
-    min-height: 36px;
-    padding: rhythm(0.25);
-    display: block;
-    background-color: #eaeaea;
-    margin-bottom: .5em;
-    border: 0;
-    display: inline; }
-    .view-items-link a:hover {
-      background-color: #684B98;
-      color: white;
-      text-decoration: none; }
-    .view-items-link a:active {
-      background-color: #BE75CB; }
+  min-height: 36px;
+  padding: 6px;
+  display: block;
+  background-color: #eaeaea;
+  margin-bottom: .5em;
+  border: 0;
+  margin-top: 1em;
+  display: inline-block; }
+  .view-items-link:hover {
+    background-color: #684B98;
+    color: white;
+    text-decoration: none; }
+  .view-items-link:active {
+    background-color: #BE75CB; }
 
 #outputs {
   margin-top: 1em; }
@@ -693,7 +692,7 @@ a {
   .pagination .previous-page a,
   .pagination .next-page a {
     min-height: 36px;
-    padding: rhythm(0.25);
+    padding: 6px;
     display: block;
     background-color: #eaeaea;
     margin-bottom: .5em;
@@ -745,7 +744,7 @@ a {
   padding: 2em 0 1em 0; }
   .item-pagination .next a, .item-pagination .previous a {
     min-height: 36px;
-    padding: rhythm(0.25);
+    padding: 6px;
     display: block;
     background-color: #eaeaea;
     margin-bottom: .5em;
@@ -867,7 +866,7 @@ input[type=submit],
 button,
 .button {
   min-height: 36px;
-  padding: rhythm(0.25);
+  padding: 6px;
   display: block;
   background-color: #eaeaea;
   margin-bottom: .5em;
@@ -1098,9 +1097,6 @@ body.files .item-file {
 
 /* -------------------------------------------------------------------------*/
 /* Collections */
-.collections .collection {
-  margin-bottom: 2em; }
-
 .collections .element {
   margin: 0 0 1em 0;
   padding: 0;
@@ -1171,7 +1167,7 @@ body.files .item-file {
   font-style: italic; }
   #simple-pages-breadcrumbs a {
     min-height: 36px;
-    padding: rhythm(0.25);
+    padding: 6px;
     display: block;
     background-color: #eaeaea;
     margin-bottom: .5em;
@@ -1269,7 +1265,7 @@ body.files .item-file {
         float: left; }
         #exhibit-pages.full #secondary-nav ul li a {
           min-height: 36px;
-          padding: rhythm(0.25);
+          padding: 6px;
           display: block;
           background-color: #eaeaea;
           margin-bottom: .5em;
@@ -1313,7 +1309,7 @@ body.files .item-file {
       margin: 0 5px 5px 0; }
       #exhibit-child-pages .exhibit-child-nav li a {
         min-height: 36px;
-        padding: rhythm(0.25);
+        padding: 6px;
         display: block;
         background-color: #eaeaea;
         margin-bottom: .5em;
