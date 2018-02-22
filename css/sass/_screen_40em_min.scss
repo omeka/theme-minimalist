@@ -22,12 +22,17 @@
     @include span(7 of 12);
 }
 
+.pagination-nav {
+    @include span(first 6 of 12);
+}
+
 .pagination {
     width: 100%;
 }
 
 #sort-links {
-    width: 100%;
+    @include span(last 6 of 12);
+    margin: $spacing-unit 0;
 }
 
 #recent-items {

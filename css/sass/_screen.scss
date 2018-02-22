@@ -326,6 +326,12 @@ a {
     border: 0;
     overflow: hidden;
     margin:1em 0;
+    display: flex;
+
+    li {
+        margin-right: (.5 * $spacing-unit);
+    }
+
     .page-input {
         form {
             padding:0;
@@ -345,6 +351,7 @@ a {
     .previous-page a,
     .next-page a {
         @include link-button;
+        margin-bottom: 0;
         line-height: $base-font-size * 1.5;
     }
 }
@@ -391,10 +398,10 @@ a {
 }
 
 #sort-links{
-    margin:0 0 1em 0;
-    .sort-label {
-        float:left;
-    }
+    margin:0 0 $spacing-unit 0;
+    display: flex;
+    justify-content: flex-end;
+
     #sort-links-list {
         overflow: auto;
         padding-left:10px;
