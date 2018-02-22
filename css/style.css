@@ -395,9 +395,13 @@ th {
   width: 100%;
   margin-right: 0; }
 
+header {
+  padding: 0 24px; }
+
 #content {
   width: 100%;
-  margin-right: 0; }
+  overflow: auto;
+  padding: 24px; }
 
 .pagination {
   width: 100%; }
@@ -525,10 +529,6 @@ body {
 
 .intro {
   font-style: italic; }
-
-#content {
-  padding: 1em 0 2em 0;
-  overflow: auto; }
 
 abbr, acronym {
   border: none;

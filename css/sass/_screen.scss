@@ -38,9 +38,14 @@
     margin-right: 0;
 }
 
+header {
+    padding: 0 $spacing-unit;
+}
+
 #content {
     width: 100%;
-    margin-right: 0;
+    overflow: auto;
+    padding: $spacing-unit;
 }
 
 .pagination {
@@ -154,11 +159,6 @@ body {
 
 .intro {
     font-style: italic;
-}
-
-#content {
-    padding:1em 0 2em 0;
-    overflow: auto;
 }
 
 abbr, acronym {
