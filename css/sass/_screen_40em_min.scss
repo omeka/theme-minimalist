@@ -57,7 +57,7 @@ div#contribution-type-form div.inputs {
 }
 
 .exhibits #exhibit-pages:not(.full) {
-    width: columns(4);
+    width: span(last 4 of 12);
     display: inline-block;
     margin-right: 0;
 }

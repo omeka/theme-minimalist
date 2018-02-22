@@ -1415,7 +1415,7 @@ body.files .item-file {
     float: left;
     margin-right: 1.69492%; }
   .exhibits #exhibit-pages:not(.full) {
-    width: columns(4);
+    width: 32.20339%;
     display: inline-block;
     margin-right: 0; }
   .full ~ #exhibit-blocks,
