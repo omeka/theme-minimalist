@@ -8,6 +8,12 @@ $grid-padding   : $gutter-width;
 
 $show-grid-backgrounds: true;
 
+$susy: (
+    columns: $total-columns,
+    gutters: $gutter-width / $column-width,
+    column-width: $column-width,
+);
+
 
 // ---------------------------------------------------------------------------
 // Color

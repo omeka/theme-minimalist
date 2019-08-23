@@ -424,9 +424,9 @@ header {
   margin-right: 0; }
 
 footer {
-  width: 310.52632%;
+  width: 100%;
   float: left;
-  margin-right: 5.26316%;
+  margin-left: 0;
   margin-right: 0; }
 
 /* -------------------------------------------------------------------------*/
