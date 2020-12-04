@@ -171,7 +171,8 @@ figure {
  * Address differences between Firefox and other browsers.
  */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /**
@@ -277,7 +278,8 @@ input {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -299,6 +301,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -432,7 +435,8 @@ footer {
 /* -------------------------------------------------------------------------*/
 /* General Styles */
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
   background-color: #fff;
@@ -464,22 +468,22 @@ body {
   #featured-item .collection,
   #featured-item .exhibit,
   #featured-collection h2,
-  #featured-collection #item-filters .collection, #item-filters
-  #featured-collection .collection,
+  #featured-collection #item-filters .collection,
+  #item-filters #featured-collection .collection,
   #featured-collection h3,
   #featured-collection .item,
   #featured-collection .collection,
   #featured-collection .exhibit,
   #featured-exhibit h2,
-  #featured-exhibit #item-filters .collection, #item-filters
-  #featured-exhibit .collection,
+  #featured-exhibit #item-filters .collection,
+  #item-filters #featured-exhibit .collection,
   #featured-exhibit h3,
   #featured-exhibit .item,
   #featured-exhibit .collection,
   #featured-exhibit .exhibit,
   #recent-items h2,
-  #recent-items #item-filters .collection, #item-filters
-  #recent-items .collection,
+  #recent-items #item-filters .collection,
+  #item-filters #recent-items .collection,
   #recent-items h3,
   #recent-items .item,
   #recent-items .collection,
@@ -487,14 +491,14 @@ body {
     padding: 0; }
   #featured-item h2, #featured-item #item-filters .collection, #item-filters #featured-item .collection,
   #featured-collection h2,
-  #featured-collection #item-filters .collection, #item-filters
-  #featured-collection .collection,
+  #featured-collection #item-filters .collection,
+  #item-filters #featured-collection .collection,
   #featured-exhibit h2,
-  #featured-exhibit #item-filters .collection, #item-filters
-  #featured-exhibit .collection,
+  #featured-exhibit #item-filters .collection,
+  #item-filters #featured-exhibit .collection,
   #recent-items h2,
-  #recent-items #item-filters .collection, #item-filters
-  #recent-items .collection {
+  #recent-items #item-filters .collection,
+  #item-filters #recent-items .collection {
     padding-top: 24px; }
   #featured-item .image,
   #featured-collection .image,
@@ -678,10 +682,12 @@ a {
   border: 0;
   overflow: hidden;
   margin: 1em 0;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .pagination li {
-    margin-right: 12px; }
+    margin-right: 12px;
+    list-style: none; }
   .pagination .page-input form {
     padding: 0; }
   .pagination .page-input #page {
@@ -763,10 +769,12 @@ a {
 
 #sort-links {
   margin: 0 0 24px 0;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: end;
-      justify-content: flex-end; }
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   #sort-links #sort-links-list {
     overflow: auto;
     padding-left: 10px; }
@@ -1131,7 +1139,8 @@ body.files .item-file {
 
 .collection .image img,
 .exhibit .image img {
-  box-shadow: -6px -6px 0 #bbb, -12px -12px 0 #eee;
+  -webkit-box-shadow: -6px -6px 0 #bbb, -12px -12px 0 #eee;
+          box-shadow: -6px -6px 0 #bbb, -12px -12px 0 #eee;
   margin-left: 12px !important; }
 
 /* -------------------------------------------------------------------------*/
