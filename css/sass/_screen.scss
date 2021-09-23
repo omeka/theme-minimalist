@@ -287,7 +287,8 @@ a {
 
 .asc a:after,
 .desc a:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
 }
 
 .asc a:after {
@@ -367,7 +368,8 @@ a {
 
 .pagination_next a:after,
 .pagination_previous a:after {
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
     position: absolute;
     left: 0;
     top: 0;
@@ -493,7 +495,8 @@ a {
     }
 
     [aria-haspopup="true"]:after {
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         content: "\f0da";
         margin: 0 0 0 .5em;
         vertical-align: bottom;
@@ -576,7 +579,8 @@ button,
         }
 
         &:after {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             text-indent: 0;
             position: absolute;
             top: 0;
@@ -704,7 +708,8 @@ button,
 
     &:after {
         content: "\f00d";
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
         text-indent: 0;
         text-align: center;
         width: 100%;
