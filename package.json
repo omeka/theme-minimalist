@@ -1,6 +1,6 @@
 {
   "name": "minimalist",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "\"Clean lines, architectural.\"",
   "main": "gulpfile.js",
   "devDependencies": {
@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/omeka/theme-minimalist/issues"
   },
-  "homepage": "https://github.com/omeka/theme-minimalist#readme"
+  "homepage": "https://github.com/omeka/theme-minimalist#readme",
+  "browserslist": [
+    "> 5%",
+    "> 1% in US"
+  ]
 }
