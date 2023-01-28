@@ -684,7 +684,7 @@ button,
 
 .field {
     border-top:1px solid $grey-light;
-    overflow: auto;
+    overflow: hidden;
 
     label {
         display: inline-block;
@@ -698,26 +698,30 @@ button,
     }
 }
 
-.remove_search {
+#advanced-search-form .field button.remove_search {
     padding: (.25 * $spacing-unit) 10px;
-    text-indent: -9999px;
-    width: 1.5 * $base-line-height;
-    position: relative;
-    height: 1.5 * $base-line-height;
     display: inline-block;
+    align-self: flex-end;
+    margin-top: 1.125 * $base-line-height;
+}
 
-    &:after {
-        content: "\f00d";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        text-indent: 0;
-        text-align: center;
-        width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        line-height: 1.5 * $base-line-height;
+#advanced-search-form .field .search-entry {
+    margin: 1em 0;
+    justify-content: flex-start;
+
+    select,
+    input[type=text] {
+        margin: 0;
     }
+}
+
+#search-narrow-by-fields .advanced-search-element {
+    margin-right: .25 * $spacing-unit;
+}
+
+#search-narrow-by-fields .advanced-search-terms {
+    width: auto;
+    margin-right: .25 * $spacing-unit;
 }
 
 .search-entry:first-child .advanced-search-joiner {

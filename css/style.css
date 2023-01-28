@@ -1152,7 +1152,7 @@ button:active,
 /* Advanced Search Form */
 .field {
   border-top: 1px solid #ddd;
-  overflow: auto;
+  overflow: hidden;
 }
 .field label {
   display: inline-block;
@@ -1165,25 +1165,29 @@ button:active,
   margin: 0.5em 0;
 }
 
-.remove_search {
+#advanced-search-form .field button.remove_search {
   padding: 6px 10px;
-  text-indent: -9999px;
-  width: 36px;
-  position: relative;
-  height: 36px;
   display: inline-block;
+  align-self: flex-end;
+  margin-top: 27px;
 }
-.remove_search:after {
-  content: "";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  text-indent: 0;
-  text-align: center;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  line-height: 36px;
+
+#advanced-search-form .field .search-entry {
+  margin: 1em 0;
+  justify-content: flex-start;
+}
+#advanced-search-form .field .search-entry select,
+#advanced-search-form .field .search-entry input[type=text] {
+  margin: 0;
+}
+
+#search-narrow-by-fields .advanced-search-element {
+  margin-right: 6px;
+}
+
+#search-narrow-by-fields .advanced-search-terms {
+  width: auto;
+  margin-right: 6px;
 }
 
 .search-entry:first-child .advanced-search-joiner {
