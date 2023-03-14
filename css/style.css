@@ -1169,7 +1169,7 @@ button:active,
   padding: 6px 10px;
   display: inline-block;
   align-self: flex-end;
-  margin-top: 27px;
+  margin-top: 6px;
 }
 
 #advanced-search-form .field .search-entry {
@@ -1181,7 +1181,7 @@ button:active,
   margin: 0;
 }
 
-#search-narrow-by-fields .advanced-search-element {
+#search-narrow-by-fields .input {
   margin-right: 6px;
 }
 

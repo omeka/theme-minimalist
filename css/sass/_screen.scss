@@ -702,7 +702,7 @@ button,
     padding: (.25 * $spacing-unit) 10px;
     display: inline-block;
     align-self: flex-end;
-    margin-top: 1.125 * $base-line-height;
+    margin-top: .25 * $base-line-height;
 }
 
 #advanced-search-form .field .search-entry {
@@ -715,7 +715,7 @@ button,
     }
 }
 
-#search-narrow-by-fields .advanced-search-element {
+#search-narrow-by-fields .input {
     margin-right: .25 * $spacing-unit;
 }
 
