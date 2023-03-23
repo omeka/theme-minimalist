@@ -722,8 +722,11 @@ button,
 }
 
 #search-narrow-by-fields .advanced-search-terms {
-    width: auto;
-    margin-right: .25 * $spacing-unit;
+    flex-grow: 1;
+
+    input {
+        width: 100%;
+    }
 }
 
 .search-entry:first-child .advanced-search-joiner {
