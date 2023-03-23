@@ -529,6 +529,8 @@ select {
     font-size: $base-font-size;
     margin-right: 3px !important;
     display: inline-block;
+    border-radius: 3px;
+    background-color: #fff;
 }
 
 input[type=text],

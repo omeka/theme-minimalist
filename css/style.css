@@ -996,6 +996,8 @@ select {
   font-size: 16px;
   margin-right: 3px !important;
   display: inline-block;
+  border-radius: 3px;
+  background-color: #fff;
 }
 
 input[type=text],
