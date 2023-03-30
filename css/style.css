@@ -972,6 +972,8 @@ a:focus {
   content: "";
   margin: 0 0 0 0.5em;
   vertical-align: bottom;
+  display: inline-block;
+  width: 6px;
 }
 #top-nav [aria-haspopup=true].open:after {
   content: "";
