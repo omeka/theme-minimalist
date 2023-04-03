@@ -953,7 +953,6 @@ a:focus {
 #top-nav .sub-nav.open li a {
   color: #684B98;
   padding: 1em;
-  border-bottom: 1px solid white;
 }
 #top-nav .sub-nav.open li a:hover {
   color: white;
