@@ -694,6 +694,10 @@ button,
     }
 }
 
+.inputs select {
+    max-width: 100%;
+}
+
 #advanced-search-form {
     padding:2em 0;
     label, input, select, button {

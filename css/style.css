@@ -1161,6 +1161,10 @@ button:active,
   display: inline-block;
 }
 
+.inputs select {
+  max-width: 100%;
+}
+
 #advanced-search-form {
   padding: 2em 0;
 }
