@@ -564,10 +564,6 @@ button,
         @include calc(width, "100% - 34px");
     }
 
-    &.with-advanced input[type=text] {
-        @include calc(width, "100% - 76px");
-    }
-
     .show-advanced,
     button {
         margin:0;
@@ -595,15 +591,6 @@ button,
         }
     }
 
-    &.with-advanced .show-advanced {
-        right: 1.5833 * $base-line-height;
-    }
-
-    &.with-advanced button {
-        right: 0;
-    }
-
-    .show-advanced,
     button {
         text-indent: -9999px;
         right: 0;
@@ -626,7 +613,7 @@ button,
         border: 1px solid;
         border-color: $grey-light;
         border-top-color: #fff;
-        padding:0 5%;
+        padding: (.5 * $spacing-unit);
         text-align: left;
 
         &.closed {
@@ -642,7 +629,19 @@ button,
             margin: (.25 * $spacing-unit) 5px 0 0;
             float:left;
         }
+
+        & > p:last-child {
+            margin-bottom: 0;
+        }
     }
+}
+
+.with-advanced input[type=text] {
+    @include calc(width, "100% - 76px");
+}
+
+#search-container button.show-advanced {
+    right: 1.5 * $base-line-height;
 }
 
 #search-filters,
