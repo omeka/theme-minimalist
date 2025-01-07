@@ -779,6 +779,9 @@ a:focus {
 .pagination .page-input form {
   padding: 0;
 }
+.pagination .page-input form label {
+  margin: 1em 0;
+}
 .pagination .page-input #page {
   width: 30px;
   text-align: right;
@@ -786,7 +789,7 @@ a:focus {
 .pagination .page-input input {
   width: 30px;
   text-align: center;
-  margin: 0;
+  margin: 0 0.5rem;
 }
 .pagination .pagination_next a,
 .pagination .pagination_previous a,
