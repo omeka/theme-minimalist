@@ -906,7 +906,6 @@ a:focus {
   */
 }
 #top-nav .nav-menu {
-  overflow: auto;
   background-color: #eaeaea;
 }
 #top-nav .nav-menu .active {
@@ -1111,12 +1110,17 @@ button:active,
   margin-bottom: 0;
 }
 
-.with-advanced input[type=text] {
-  width: calc(100% - 76px);
+#search-container.with-advanced input[type=text] {
+  width: calc(100% - 72px);
+  position: relative;
 }
 
 #search-container button.show-advanced {
   right: 36px;
+}
+
+#search-container *:focus {
+  z-index: 1;
 }
 
 #search-filters ul,
