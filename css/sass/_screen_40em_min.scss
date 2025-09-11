@@ -58,7 +58,7 @@ div#contribution-type-form div.inputs {
 .exhibits.show #content > h1:first-of-type,
 #exhibit-blocks,
 #exhibit-page-navigation { 
-    @include span(8 of 12); 
+    @include span(8 of 12 omega); 
 }
 
 .exhibits #exhibit-pages:not(.full) {

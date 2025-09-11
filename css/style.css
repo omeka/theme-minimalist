@@ -1709,8 +1709,8 @@ div#contribution-type-form div.inputs {
 #exhibit-blocks,
 #exhibit-page-navigation {
     width: 66.1016949153%;
-    float: left;
-    margin-right: 1.6949152542%;
+    float: right;
+    margin-right: 0;
   }
 
   .exhibits #exhibit-pages:not(.full) {
