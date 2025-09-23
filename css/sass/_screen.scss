@@ -520,9 +520,24 @@ form {
         padding:0;
         margin: 0 0 $spacing-unit 0;
     }
-    label, input, select {
-        margin:1em .5em 1em 0;
+}
+
+.field {
+    border-top:1px solid $grey-light;
+    display: flow-root;
+    padding: (.5 * $spacing-unit) 0;
+
+    &:last-child {
+        border-bottom: 1px solid $grey-light;
     }
+
+    label {
+        display: inline-block;
+    }
+}
+
+.inputs select {
+    max-width: 100%;
 }
 
 select {
@@ -692,24 +707,8 @@ button,
 /* -------------------------------------------------------------------------*/
 /* Advanced Search Form */
 
-.field {
-    border-top:1px solid $grey-light;
-    overflow: hidden;
-
-    label {
-        display: inline-block;
-    }
-}
-
-.inputs select {
-    max-width: 100%;
-}
-
 #advanced-search-form {
     padding:2em 0;
-    label, input, select, button {
-        margin:.5em 0;
-    }
 }
 
 #advanced-search-form .field button.remove_search {
@@ -720,7 +719,7 @@ button,
 }
 
 #advanced-search-form .field .search-entry {
-    margin: 1em 0;
+    margin: 0 0 1em;
     justify-content: flex-start;
 
     select,
