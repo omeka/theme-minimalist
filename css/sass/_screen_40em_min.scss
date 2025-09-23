@@ -51,6 +51,7 @@
 .field .inputs,
 div#contribution-type-form div.inputs { 
     @include span(9 omega of 12); 
+    margin-left: 0;
 }
 
 .exhibits.summary #primary,
