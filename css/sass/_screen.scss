@@ -394,7 +394,8 @@ a {
 .item-pagination {
     margin: 0;
     padding: 0;
-    border: 0;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
     padding:2em 0 1em 0;
 
