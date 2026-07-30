@@ -341,6 +341,34 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Lato-Italic.woff2") format("woff2"), url("../fonts/Lato-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Lato-BoldItalic.woff2") format("woff2"), url("../fonts/Lato-BoldItalic.woff") format("woff");
+}
 /* -------------------------------------------------------------------------*/
 /* Screen */
 /* -------------------------------------------------------------------------*/
@@ -678,11 +706,11 @@ a:focus {
 }
 
 .asc a:after {
-  content: " ";
+  content: " "/"";
 }
 
 .desc a:after {
-  content: " ";
+  content: " "/"";
 }
 
 .secondary-nav,
@@ -706,7 +734,7 @@ a:focus {
 .tags #secondary-nav li:before,
 .items .secondary-nav li:before,
 .items #secondary-nav li:before {
-  content: "— ";
+  content: "— "/"";
 }
 
 .pagination {
@@ -787,11 +815,11 @@ a:focus {
 }
 
 .pagination_previous a:after {
-  content: "";
+  content: ""/"";
 }
 
 .pagination_next a:after {
-  content: "";
+  content: ""/"";
 }
 
 .item-pagination {
@@ -833,7 +861,7 @@ a:focus {
   margin-right: 10px;
 }
 #sort-links li:before {
-  content: "— ";
+  content: "— "/"";
 }
 #sort-links li.sorting a {
   text-decoration: underline;
@@ -911,19 +939,19 @@ a:focus {
   color: white;
 }
 #top-nav .sub-nav.open ul a:before {
-  content: "— ";
+  content: "— "/"";
 }
 #top-nav [aria-haspopup=true]:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "";
+  content: ""/"";
   margin: 0 0 0 0.5em;
   vertical-align: bottom;
   display: inline-block;
   width: 6px;
 }
 #top-nav [aria-haspopup=true].open:after {
-  content: "";
+  content: ""/"";
 }
 
 /* -------------------------------------------------------------------------*/
@@ -1037,10 +1065,10 @@ button:active,
   right: 0;
 }
 #search-container .show-advanced:after {
-  content: "";
+  content: ""/"";
 }
 #search-container button:after {
-  content: "";
+  content: ""/"";
 }
 #search-container #advanced-form {
   position: absolute;
@@ -1393,7 +1421,7 @@ body.files .item-file {
   text-decoration: none;
 }
 #exhibit-pages:not(.full) ul li ul a:before {
-  content: "— ";
+  content: "— "/"";
 }
 #exhibit-pages:not(.full) > ul {
   margin-left: 0;
@@ -1479,14 +1507,14 @@ body.files .item-file {
   clear: both;
 }
 #exhibit-pages.full #secondary-nav > li:nth-child(3) a:before {
-  content: "— ";
+  content: "— "/"";
 }
 #exhibit-pages.full #secondary-nav > li:nth-child(4) {
   display: block;
   clear: left;
 }
 #exhibit-pages.full #secondary-nav > li:nth-child(4) a:before {
-  content: "— ";
+  content: "— "/"";
 }
 #exhibit-pages.full #secondary-nav .exhibit-title {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
@@ -1528,7 +1556,7 @@ body.files .item-file {
   background-color: #BE75CB;
 }
 #exhibit-child-pages .exhibit-child-nav li a:before {
-  content: "— ";
+  content: "— "/"";
 }
 
 .exhibit-block {
@@ -1799,7 +1827,7 @@ div#contribution-type-form div.inputs {
     color: #684B98;
   }
   #top-nav .nav-menu .sub-nav.open ul a:before {
-    content: "— ";
+    content: "— "/"";
   }
   #top-nav .nav-menu .sub-nav.open li {
     display: block;
@@ -1830,7 +1858,7 @@ div#contribution-type-form div.inputs {
     float: left;
   }
   #bottom-nav li:before {
-    content: "— ";
+    content: "— "/"";
   }
   #bottom-nav li.active {
     font-weight: bold;
