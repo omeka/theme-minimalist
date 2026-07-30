@@ -35,5 +35,8 @@
   "browserslist": [
     "> 5%",
     "> 1% in US"
-  ]
+  ],
+  "dependencies": {
+    "gulp-sourcemaps": "^2.6.5"
+  }
 }
