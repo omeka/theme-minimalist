@@ -143,6 +143,7 @@ body {
     padding: 0;
     position: absolute;
     width: 1px;
+    background-color: #fff;
 }
 
 #skipnav:focus {
@@ -152,8 +153,6 @@ body {
     height: auto;
     width: auto;
     padding: .5em;
-    border: 1px blue dashed;
-    color: $accent-light;
 }
 
 .intro {
@@ -252,7 +251,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: saturate($accent-light, 5%);
+        color: $accent-light;
         text-decoration: underline;
     }
 
@@ -486,7 +485,7 @@ a {
             a:hover {
                 color:white;
                 text-decoration: none;
-                background-color:lighten($accent-light, 10%);
+                background-color: $accent-light;
             }
         }
         .active a{

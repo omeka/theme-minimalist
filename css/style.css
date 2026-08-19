@@ -544,6 +544,7 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+  background-color: #fff;
 }
 
 #skipnav:focus {
@@ -553,8 +554,6 @@ body {
   height: auto;
   width: auto;
   padding: 0.5em;
-  border: 1px blue dashed;
-  color: #BE75CB;
 }
 
 .intro {
@@ -595,7 +594,7 @@ blockquote {
   text-decoration: none;
 }
 .view-items-link:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 
 #outputs {
@@ -669,11 +668,11 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #c170d0;
+  color: #9d50ab;
   text-decoration: underline;
 }
 a:active {
-  color: #BE75CB;
+  color: #9d50ab;
 }
 a:visited {
   color: #8164b2;
@@ -789,7 +788,7 @@ a:focus {
 .pagination .pagination_previous a:active,
 .pagination .previous-page a:active,
 .pagination .next-page a:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 
 .pagination_next a,
@@ -844,7 +843,7 @@ a:focus {
   text-decoration: none;
 }
 .item-pagination .next a:active, .item-pagination .previous a:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 
 #sort-links {
@@ -933,7 +932,7 @@ a:focus {
 #top-nav .sub-nav.open li a:hover {
   color: white;
   text-decoration: none;
-  background-color: #cf9ad9;
+  background-color: #9d50ab;
 }
 #top-nav .sub-nav.open .active a {
   color: white;
@@ -1017,7 +1016,7 @@ button:hover,
 input[type=submit]:active,
 button:active,
 .button:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 
 .button:focus {
@@ -1370,7 +1369,7 @@ body.files .item-file {
   text-decoration: none;
 }
 #simple-pages-breadcrumbs a:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 
 /* -------------------------------------------------------------------------*/
@@ -1457,7 +1456,7 @@ body.files .item-file {
 }
 #exhibit-pages.full .current-page {
   display: block;
-  background-color: #BE75CB;
+  background-color: #9d50ab;
   padding: 0.5em;
   color: white;
 }
@@ -1497,7 +1496,7 @@ body.files .item-file {
   text-decoration: none;
 }
 #exhibit-pages.full #secondary-nav ul li a:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 #exhibit-pages.full #secondary-nav > li:nth-child(2) {
   display: block;
@@ -1553,7 +1552,7 @@ body.files .item-file {
   text-decoration: none;
 }
 #exhibit-child-pages .exhibit-child-nav li a:active {
-  background-color: #BE75CB;
+  background-color: #9d50ab;
 }
 #exhibit-child-pages .exhibit-child-nav li a:before {
   content: "— "/"";
@@ -1799,7 +1798,7 @@ div#contribution-type-form div.inputs {
     padding: 0;
     border: 0;
     margin: 0;
-    background-color: #BE75CB;
+    background-color: #9d50ab;
     z-index: 2;
     border: 1px solid #6f6f6f;
   }
@@ -1839,11 +1838,11 @@ div#contribution-type-form div.inputs {
     color: #684B98;
   }
   #top-nav .nav-menu .sub-nav.open li a:hover {
-    background-color: #cf9ad9;
+    background-color: #9d50ab;
     color: white;
   }
   #top-nav .nav-menu .sub-nav.open li a:focus {
-    background-color: #cf9ad9;
+    background-color: #9d50ab, 10%;
     color: white;
   }
 

@@ -220,11 +220,11 @@ div#contribution-type-form div.inputs {
             a {
                 color: $accent-main;
                 &:hover{
-                    background-color: lighten($accent-light, 10%);
+                    background-color: $accent-light;
                     color: white;
                 }
                 &:focus {
-                    background-color: lighten($accent-light, 10%);
+                    background-color: $accent-light, 10%;
                     color:white;
                 }
             }
