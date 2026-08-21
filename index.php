@@ -43,7 +43,7 @@ if ($recentItems):
 <div id="recent-items">
     <h2><?php echo __('Recently Added Items'); ?></h2>
     <?php echo recent_items($recentItems); ?>
-    <p class="view-items-link"><a href="<?php echo html_escape(url('items')); ?>"><?php echo __('View All Items'); ?></a></p>
+    <p><a href="<?php echo html_escape(url('items')); ?>" class="view-items-link"><?php echo __('View All Items'); ?></a></p>
 </div><!--end recent-items -->
 <?php endif; ?>
 

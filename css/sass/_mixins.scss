@@ -5,6 +5,9 @@
     background-color: lighten($grey-light, 5%);
     margin-bottom:.5em;
     border: 0;
+    &:visited {
+        color: $accent-main;
+    }
     &:hover {
         background-color:$accent-main;
         color:white;

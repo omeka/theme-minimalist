@@ -177,7 +177,7 @@ blockquote {
     font-style:italic;
 }
 
-.view-items-link {
+a.view-items-link {
     @include link-button;
     margin-top: 1em;
     display: inline-block;

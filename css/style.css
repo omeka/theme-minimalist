@@ -578,7 +578,7 @@ blockquote {
   font-style: italic;
 }
 
-.view-items-link {
+a.view-items-link {
   min-height: 36px;
   padding: 6px;
   display: block;
@@ -588,12 +588,15 @@ blockquote {
   margin-top: 1em;
   display: inline-block;
 }
-.view-items-link:hover {
+a.view-items-link:visited {
+  color: #684B98;
+}
+a.view-items-link:hover {
   background-color: #684B98;
   color: white;
   text-decoration: none;
 }
-.view-items-link:active {
+a.view-items-link:active {
   background-color: #9d50ab;
 }
 
@@ -776,6 +779,12 @@ a:focus {
   margin-bottom: 0;
   line-height: 24px;
 }
+.pagination .pagination_next a:visited,
+.pagination .pagination_previous a:visited,
+.pagination .previous-page a:visited,
+.pagination .next-page a:visited {
+  color: #684B98;
+}
 .pagination .pagination_next a:hover,
 .pagination .pagination_previous a:hover,
 .pagination .previous-page a:hover,
@@ -836,6 +845,9 @@ a:focus {
   background-color: #eaeaea;
   margin-bottom: 0.5em;
   border: 0;
+}
+.item-pagination .next a:visited, .item-pagination .previous a:visited {
+  color: #684B98;
 }
 .item-pagination .next a:hover, .item-pagination .previous a:hover {
   background-color: #684B98;
@@ -1005,6 +1017,11 @@ button,
   background-color: #eaeaea;
   margin-bottom: 0.5em;
   border: 0;
+}
+input[type=submit]:visited,
+button:visited,
+.button:visited {
+  color: #684B98;
 }
 input[type=submit]:hover,
 button:hover,
@@ -1363,6 +1380,9 @@ body.files .item-file {
   border: 0;
   display: initial;
 }
+#simple-pages-breadcrumbs a:visited {
+  color: #684B98;
+}
 #simple-pages-breadcrumbs a:hover {
   background-color: #684B98;
   color: white;
@@ -1490,6 +1510,9 @@ body.files .item-file {
   border: 0;
   margin-bottom: 0;
 }
+#exhibit-pages.full #secondary-nav ul li a:visited {
+  color: #684B98;
+}
 #exhibit-pages.full #secondary-nav ul li a:hover {
   background-color: #684B98;
   color: white;
@@ -1545,6 +1568,9 @@ body.files .item-file {
   background-color: #eaeaea;
   margin-bottom: 0.5em;
   border: 0;
+}
+#exhibit-child-pages .exhibit-child-nav li a:visited {
+  color: #684B98;
 }
 #exhibit-child-pages .exhibit-child-nav li a:hover {
   background-color: #684B98;
