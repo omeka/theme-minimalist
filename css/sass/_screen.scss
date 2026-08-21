@@ -449,6 +449,9 @@ a {
         a {
             display:block;
             padding: 1em 0 1em 1em;
+            &:visited {
+                color: $accent-main;
+            }
             &:hover {
                 background-color:$accent-main;
                 color: #fff;
@@ -1050,7 +1053,7 @@ body.files .item-file {
             margin:0;
             .current a {
                 background-color: lighten($accent-main, 5%);
-                color:white;
+                color:white !important;
             }
             li {
                 padding:0;

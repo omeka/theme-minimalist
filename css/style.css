@@ -910,6 +910,9 @@ a:focus {
   display: block;
   padding: 1em 0 1em 1em;
 }
+#top-nav li a:visited {
+  color: #684B98;
+}
 #top-nav li a:hover {
   background-color: #684B98;
   color: #fff;
@@ -1494,7 +1497,7 @@ body.files .item-file {
 }
 #exhibit-pages.full #secondary-nav ul .current a {
   background-color: #7453a9;
-  color: white;
+  color: white !important;
 }
 #exhibit-pages.full #secondary-nav ul li {
   padding: 0;
